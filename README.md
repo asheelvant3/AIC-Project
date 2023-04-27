@@ -46,7 +46,6 @@ python /content/daisyRec/run_examples/tune.py --optimization_metric=ndcg --hyper
 ```
 
 Command to test for Multi-Vae:
-Remember to vary the regularisation term according to your tuning
 ```
 %%shell
 python /content/daisyRec/run_examples/test.py --algo_name=multi-vae --dataset=ml-100k --prepro=origin --topk=50 --epochs=50 --test_size=0.2 --val_size=0.1 --cand_num=1000 --gpu=0 --init_method=default --optimizer=default --test_method=tsbr --val_method=tsbr --batch_size=128 --latent_dim=128 --dropout=0.5 --lr=0.01 --anneal_cap=0.2
