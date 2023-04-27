@@ -1,7 +1,5 @@
 AIC PROJECT Spring 2023
 
-[![arXiv](https://img.shields.io/badge/arXiv-daisyRec-%23B21B1B)](https://arxiv.org/abs/2206.10848)
-
 ### Overview
 
 daisyRec is a Python toolkit developed for benchmarking top-N recommendation task. The name DAISY stands for multi-**D**imension f**A**ir compar**I**son for recommender **SY**stem. 
