@@ -42,6 +42,8 @@ python /content/daisyRec/run_examples/test.py --algo_name=ease --dataset=ml-100k
 
 ### Documentation 
 
+Presentation for our analysis is available [here](https://docs.google.com/presentation/d/1Aydrc2TI8N73Uy8H8mwDvj6p8IKMZwWkkBqi5tu9Qms/edit?usp=sharing)
+
 The documentation of DaisyRec is available [here](https://daisyrec.readthedocs.io/en/latest/), which provides detailed explanations for all arguments.
 
 ### Datasets
