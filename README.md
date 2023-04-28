@@ -39,6 +39,17 @@ Remember to vary the regularisation term according to your tuning
 %%shell
 python /content/daisyRec/run_examples/test.py --algo_name=ease --dataset=ml-100k --prepro=origin --topk=5 --epochs=50 --test_size=0.2 --val_size=0.1 --cand_num=100 --test_method=tsbr --val_method=tsbr --reg=50
 ```
+Command to tune for Multi-Vae:
+```
+%%shell
+python /content/daisyRec/run_examples/tune.py --optimization_metric=ndcg --hyperopt_trail=20 --algo_name=multi-vae --dataset=ml-100k --prepro=origin --topk=50 --epochs=50 --test_size=0.2 --val_size=0.1 --cand_num=1000 --gpu=0 --init_method=default --optimizer=default --test_method=tsbr --val_method=tsbr --tune_pack='{"batch_size": {"min": 128, "max": 512, "step": null}, "latent_dim": {"min": 64, "max": 256, "step": null}, "dropout": {"min": 0.1, "max": 0.9, "step": null}, "lr": {"min": 0.001, "max": 0.01, "step": null}, "anneal_cap": {"min": 0.1, "max": 1, "step": null}}'
+```
+
+Command to test for Multi-Vae:
+```
+%%shell
+python /content/daisyRec/run_examples/test.py --algo_name=multi-vae --dataset=ml-100k --prepro=origin --topk=50 --epochs=50 --test_size=0.2 --val_size=0.1 --cand_num=1000 --gpu=0 --init_method=default --optimizer=default --test_method=tsbr --val_method=tsbr --batch_size=128 --latent_dim=128 --dropout=0.5 --lr=0.01 --anneal_cap=0.2
+```
 
 ### Documentation 
 
